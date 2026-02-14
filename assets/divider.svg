@@ -1,0 +1,20 @@
+<svg width="1200" height="28" viewBox="0 0 1200 28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Divider">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f5d4" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#00f5d4" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#00f5d4" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="13" width="1200" height="2" fill="url(#line)" />
+  <rect x="0" y="10" width="1200" height="1" fill="#1b3a54" opacity="0.6" />
+  <rect x="0" y="17" width="1200" height="1" fill="#1b3a54" opacity="0.6" />
+
+  <circle cx="0" cy="14" r="3" fill="#6dfaff">
+    <animate attributeName="cx" values="0;1200;0" dur="5.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1200" cy="14" r="2" fill="#6dfaff" opacity="0.5">
+    <animate attributeName="cx" values="1200;0;1200" dur="8s" repeatCount="indefinite" />
+  </circle>
+</svg>

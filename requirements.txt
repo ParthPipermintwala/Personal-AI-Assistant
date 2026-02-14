@@ -1,0 +1,6 @@
+SpeechRecognition>=3.10
+pyttsx3>=2.90
+PyAudio>=0.2.13
+requests>=2.31
+google-genai>=0.3.0
+pyinstaller>=6.0
