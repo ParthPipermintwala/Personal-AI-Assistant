@@ -13,7 +13,10 @@ def handle_open(command, isAlexa, response_queue):
         return
     if name in apps:
         response_queue.put({"text": f"Opening {name}", "isAlexa": isAlexa, "micAccess": False})
-        subprocess.Popen(f"start {apps[name]}", shell=True)
+        try:
+            subprocess.Popen(f"start {apps[name]}", shell=True)
+        except Exception as e:
+            webbrowser.open(f"https://www.{name}.com")
         return
     webbrowser.open(f"https://www.{name}.com")
 
@@ -28,7 +31,10 @@ def handle_close(command, isAlexa, response_queue):
         if not proc.lower().endswith(".exe"):
             proc += ".exe"
         response_queue.put({"text": f"Closing {name}", "isAlexa": isAlexa, "micAccess": False})
-        subprocess.Popen(["taskkill", "/F", "/IM", proc], shell=True)
+        try:
+            subprocess.Popen(["taskkill", "/F", "/IM", proc], shell=True)
+        except Exception as e:
+            response_queue.put({"text": f"Failed to close {name}", "isAlexa": isAlexa, "micAccess": False})
         return
 
     response_queue.put({"text": f"{name} not found", "isAlexa": isAlexa, "micAccess": False})
@@ -43,8 +49,7 @@ def handle_play(command, isAlexa, response_queue):
         response_queue.put({"text": f"Playing {name}", "isAlexa": isAlexa, "micAccess": False})
         webbrowser.open(songs[name])
         return
-
-    response_queue.put({"text": f"{name} not found", "isAlexa": isAlexa, "micAccess": False})
+    webbrowser.open(f"https://www.youtube.com/results?search_query={name}")
 
 
 def handle_system(command, isAlexa, response_queue):

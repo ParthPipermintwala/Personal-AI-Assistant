@@ -121,3 +121,6 @@ class appUi:
     # Run
     def run(self):
         self.root.mainloop()
+
+    def exit(self):
+        self.root.destroy()

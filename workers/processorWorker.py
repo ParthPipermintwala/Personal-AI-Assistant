@@ -58,6 +58,7 @@ def processorWorker(text_queue, response_queue, stop_event, interrupt_event, ui)
                 "micAccess": False
             })
             stop_event.set()
+            ui.exit()
             text_queue.task_done()
             continue
         
