@@ -1,6 +1,7 @@
 apps = {
     # -------- CODE --------
     "vscode": "code",
+    "code": "code",
     "visualstudiocode": "code",
     "codeeditor": "code",
 
@@ -39,7 +40,7 @@ apps = {
     "setting": "ms-settings:",
     "store": "ms-windows-store:",
     "clock": "ms-clock:",
-    "file explorer": "explorer",
+    "file": "explorer",
     "fileexplorer": "explorer",
     "explorer": "explorer",
 

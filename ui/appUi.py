@@ -13,9 +13,9 @@ class appUi:
         
         # Window size
         width = self.root.winfo_screenwidth()
-        self.root.geometry(f"{width}x50+0+0")
-        self.root.minsize(width, 50)
-        self.root.maxsize(width, 50)
+        self.root.geometry(f"{width}x40+0+0")
+        self.root.minsize(width, 40)
+        self.root.maxsize(width, 40)
 
         # Keeps window above all other apps
         self.root.attributes("-topmost", True)
@@ -56,7 +56,7 @@ class appUi:
             text="🧠 Personal Assistant",
             fg="#00FFFF",
             bg=self.bg,
-            font=("Segoe UI Emoji", 14, "bold"),
+            font=("Segoe UI Emoji", 13, "bold"),
         ).grid(row=0, column=0, sticky="w") 
 
         # Status line
@@ -65,7 +65,7 @@ class appUi:
             textvariable=self.status_text,
             fg="#00FF88", 
             bg=self.bg,
-            font=("Segoe UI Emoji", 13),
+            font=("Segoe UI Emoji", 12),
         )
         status.grid(row=0, column=1, sticky="nsew")
         heard = tk.Label(
@@ -73,7 +73,7 @@ class appUi:
             textvariable=self.heard_text,
             fg="#FFFFFF",
             bg=self.bg,
-            font=("Segoe UI Emoji", 13),
+            font=("Segoe UI Emoji", 12),
         )
         heard.grid(row=0, column=2, sticky="w")
 

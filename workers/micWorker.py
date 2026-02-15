@@ -3,13 +3,13 @@ from core.speechEngine import recognizer
 
 def micWorker(text_queue,stop_event,mic_stop_event,ui):
     with sr.Microphone() as source:
-        recognizer.adjust_for_ambient_noise(source, duration=0.2)
+        recognizer.adjust_for_ambient_noise(source, duration=0.1)
         
         while not stop_event.is_set():
             if mic_stop_event.is_set():
                 continue
             try:
-                ui.update_status("🎙️Listening...")
+                ui.update_status("🎙️Listening...") 
                 audio=recognizer.listen(source,timeout=10,phrase_time_limit=8)
                 
                 ui.update_status("⚙️ Recognizing...")

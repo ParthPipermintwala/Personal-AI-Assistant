@@ -11,7 +11,7 @@ recognizer.dynamic_energy_threshold = dynamic_energy_threshold
 recognizer.non_speaking_duration = non_speaking_duration 
 
 engine = pyttsx3.init('sapi5')
-engine.setProperty('rate', 175)
+engine.setProperty('rate', 140)
 
 voices = engine.getProperty('voices')
 male_voice = voices[0].id

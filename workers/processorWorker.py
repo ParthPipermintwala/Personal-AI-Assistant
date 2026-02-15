@@ -35,7 +35,8 @@ def processorWorker(text_queue, response_queue, stop_event, interrupt_event, ui)
             continue
 
         command = command.replace("alexa", "").replace("jarvis", "").strip()
-        command=command.replace("  "," ")
+        command=command.replace(" ","")
+        command=command.replace("  ","")
         
         # Stop the program
         if "stop" in command :
@@ -58,8 +59,8 @@ def processorWorker(text_queue, response_queue, stop_event, interrupt_event, ui)
                 "micAccess": False
             })
             stop_event.set()
-            ui.exit()
             text_queue.task_done()
+            ui.exit()
             continue
         
         routeCommand(command, isAlexa, response_queue)
