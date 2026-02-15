@@ -21,7 +21,7 @@
     <img src="https://img.shields.io/github/v/release/ParthPipermintwala/Personal-AI-Assistant?style=for-the-badge" />
   </a>
   <img src="https://img.shields.io/github/license/ParthPipermintwala/Personal-AI-Assistant?style=for-the-badge" />
-  <a href="https://github.com/ParthPipermintwala/Personal-AI-Assistant/releases/tag/v1.1">
+  <a href="https://github.com/ParthPipermintwala/Personal-AI-Assistant/releases/download/v1.1/Assistant.zip">
     <img src="https://img.shields.io/badge/⬇%20Download-Latest%20Release-00C853?style=for-the-badge" />
   </a>
 </div>
@@ -61,8 +61,8 @@ Built as a **portfolio-grade application** with production-style structure and t
 Download the standalone EXE file.<br/>
 **No Python installation required!**
 
-<a href="https://github.com/ParthPipermintwala/Personal-AI-Assistant/releases/download/v1.1/Assistant.exe">
-  <img src="https://img.shields.io/badge/Download-Assistant.exe-00C853?style=for-the-badge&logo=windows&logoColor=white" />
+<a href="https://github.com/ParthPipermintwala/Personal-AI-Assistant/releases/download/v1.1/Assistant.zip">
+  <img src="https://img.shields.io/badge/Download-Assistant.zip-00C853?style=for-the-badge&logo=windows&logoColor=white" />
 </a>
 
 </td>
@@ -280,10 +280,6 @@ If you like this project:
 - ⭐ Star the repository
 - 🍴 Fork and experiment
 - 🚀 Share with others
-
-<div align="center">
-  <img src="assets/divider.svg" alt="divider" width="100%" />
-</div>
 
 <div align="center">
   <b>Built with passion for AI and software engineering 🤖✨</b>
